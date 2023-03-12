@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扇</title>
+    <link rel="stylesheet" href="E:\前端笔记\reset.css">
+<style>.fan{list-style: none;
+    width: 600px;height: 600px; margin: auto;
+    position: relative;}
+    .fan li{position: absolute;
+    width: 100px;
+    height: 400px;
+    left: 40%;
+    transform-origin: 50% 100% ;
+    /* 以底部为终点 */
+    transition: all 1s linear;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;}
+.fan li:nth-of-type(6n){background-color: rgb(234, 255, 0);}
+.fan li:nth-of-type(6n+1){background-color: rgb(0, 255, 98);}
+.fan li:nth-of-type(6n+2){background-color: rgb(255, 174, 0);}
+.fan li:nth-of-type(6n+3){background-color: rgb(255, 13, 0);}
+.fan li:nth-of-type(6n+4){background-color: rgb(225, 0, 255);}
+.fan li:nth-of-type(6n+5){background-color: rgb(0, 21, 255);}
+    .fan:hover li:nth-child(1){transform: rotate(-85deg);}
+    .fan:hover li:nth-child(2){transform: rotate(-70deg);}
+    .fan:hover li:nth-child(3){transform: rotate(-55deg);}
+    .fan:hover li:nth-child(4){transform: rotate(-40deg);}
+    .fan:hover li:nth-child(5){transform: rotate(-25deg);}
+    .fan:hover li:nth-child(6){transform: rotate(-8deg);}
+    .fan:hover li:nth-child(7){transform: rotate(8deg);}
+    .fan:hover li:nth-child(8){transform: rotate(25deg);}
+    .fan:hover li:nth-child(9){transform: rotate(40deg);}
+    .fan:hover li:nth-child(10){transform: rotate(55deg);}
+    .fan:hover li:nth-child(11){transform: rotate(70deg);}
+    .fan:hover li:nth-child(12){transform: rotate(85deg);}
+    
+    
+    </style>
+</head>
+<body>
+    <ul class="fan">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li> 
+    </ul>
+</body>
+</html>
